@@ -1,0 +1,20 @@
+source:
+  type: github
+  repo: "OWNER/hermes-news-briefings"
+  branch: "main"
+  file: "latest/briefing.md"
+
+delivery:
+  type: telegram
+  mode: markdown
+  split_long_messages: true
+  max_message_length: 3500
+
+schedule:
+  timezone: "Europe/Moscow"
+  time: "05:10"
+
+behavior:
+  send_only_if_file_changed: true
+  include_header: true
+  include_source_link: false

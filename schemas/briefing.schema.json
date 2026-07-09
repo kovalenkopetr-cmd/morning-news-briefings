@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "required": [
+    "date",
+    "timezone",
+    "title",
+    "sections",
+    "impact",
+    "main_meaning"
+  ],
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "object",
+      "required": [
+        "world",
+        "russia",
+        "moscow"
+      ],
+      "properties": {
+        "world": {
+          "type": "array"
+        },
+        "russia": {
+          "type": "array"
+        },
+        "moscow": {
+          "type": "array"
+        }
+      }
+    },
+    "impact": {
+      "type": "string"
+    },
+    "main_meaning": {
+      "type": "string"
+    }
+  }
+}

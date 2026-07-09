@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-09",
+  "timezone": "Europe/Moscow",
+  "title": "Morning briefing",
+  "sections": {
+    "world": [
+      {
+        "text": "Placeholder world item",
+        "flags": [
+          "✅",
+          "🆕"
+        ]
+      },
+      {
+        "text": "Placeholder world item",
+        "flags": [
+          "⚠️"
+        ]
+      },
+      {
+        "text": "Placeholder world item",
+        "flags": [
+          "➕"
+        ]
+      }
+    ],
+    "russia": [
+      {
+        "text": "Placeholder Russia item",
+        "flags": [
+          "✅",
+          "🆕"
+        ]
+      },
+      {
+        "text": "Placeholder Russia item",
+        "flags": [
+          "⚠️"
+        ]
+      },
+      {
+        "text": "Placeholder Russia item",
+        "flags": [
+          "➕"
+        ]
+      }
+    ],
+    "moscow": [
+      {
+        "text": "Placeholder Moscow item",
+        "flags": [
+          "✅",
+          "🆕"
+        ]
+      },
+      {
+        "text": "Placeholder Moscow item",
+        "flags": [
+          "⚠️"
+        ]
+      },
+      {
+        "text": "Placeholder Moscow item",
+        "flags": [
+          "➕"
+        ]
+      }
+    ]
+  },
+  "impact": "Placeholder impact summary.",
+  "main_meaning": "Repository scaffold is ready."
+}
