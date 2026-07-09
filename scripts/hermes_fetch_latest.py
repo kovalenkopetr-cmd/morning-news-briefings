@@ -86,12 +86,9 @@ def _split_message(text: str, limit: int) -> List[str]:
     parts: List[str] = []
     remaining = text
     while len(remaining) > limit:
-        cut = remaining.rfind('
-
-', 0, limit)
+        cut = remaining.rfind("\n\n", 0, limit)
         if cut <= 0:
-            cut = remaining.rfind('
-', 0, limit)
+            cut = remaining.rfind("\n", 0, limit)
         if cut <= 0:
             cut = limit
         parts.append(remaining[:cut].rstrip())
@@ -186,9 +183,7 @@ def main() -> int:
 
     message = text
     if cfg.include_header:
-        header = f'
-
-Источник: {cfg.raw_url}' if cfg.include_source_link else ''
+        header = f"\n\nИсточник: {cfg.raw_url}" if cfg.include_source_link else ""
         message = text + header
 
     parts = _split_message(message, cfg.max_message_length) if cfg.split_long_messages else [message]
